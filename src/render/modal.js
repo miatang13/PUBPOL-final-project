@@ -1,4 +1,5 @@
 import gsap from 'gsap'
+import { marked } from 'marked'
 
 const fmt = new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD', maximumFractionDigits: 0 })
 
@@ -60,7 +61,7 @@ function buildModalContent(job) {
       <div class="modal-robot__info">
         <p class="modal-robot__name">${robot.name}</p>
         <p class="modal-robot__company">${robot.company}</p>
-        <p class="modal-robot__description">${robot.description}</p>
+        <div class="modal-robot__description">${marked.parse(robot.description)}</div>
         <p class="modal-robot__price">Price: ${robot.price}</p>
       </div>
     </div>

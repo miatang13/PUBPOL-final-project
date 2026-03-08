@@ -359,6 +359,16 @@ body {
   line-height: 1.7;
 }
 
+.modal-robot__description p { margin-bottom: 8px; }
+.modal-robot__description p:last-child { margin-bottom: 0; }
+.modal-robot__description strong { font-weight: 500; color: #000; }
+.modal-robot__description em { font-style: italic; }
+.modal-robot__description ul,
+.modal-robot__description ol { padding-left: 16px; margin-bottom: 8px; }
+.modal-robot__description ul { list-style: disc; }
+.modal-robot__description ol { list-style: decimal; }
+.modal-robot__description li { margin-bottom: 3px; }
+
 .modal-robot__price {
   font-size: 12px;
   font-weight: 500;
