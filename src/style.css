@@ -1,1 +1,155 @@
 @import "tailwindcss";
+
+/* ─── Base ─────────────────────────────────────────── */
+
+body {
+  @apply bg-white text-neutral-900 antialiased;
+  font-family: 'Georgia', serif;
+}
+
+/* ─── Hero ──────────────────────────────────────────── */
+
+#hero {
+  @apply max-w-3xl mx-auto px-8 pt-32 pb-24 text-center;
+}
+
+#hero-title {
+  @apply text-5xl font-light tracking-tight mb-6;
+}
+
+#hero-subtitle {
+  @apply text-base text-neutral-500 leading-relaxed;
+}
+
+/* ─── Field sections ─────────────────────────────────── */
+
+.field-section {
+  @apply max-w-6xl mx-auto px-8 mb-24;
+}
+
+.field-heading {
+  @apply text-xs uppercase tracking-widest text-neutral-400 mb-8 border-t border-neutral-200 pt-6;
+}
+
+/* ─── Job grid ───────────────────────────────────────── */
+
+.job-grid {
+  @apply grid grid-cols-2 gap-px bg-neutral-200;
+}
+
+@media (min-width: 768px) {
+  .job-grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+@media (min-width: 1024px) {
+  .job-grid { grid-template-columns: repeat(4, 1fr); }
+}
+
+/* ─── Job card ───────────────────────────────────────── */
+
+.job-card {
+  @apply bg-white cursor-pointer flex flex-col;
+  transition: background 0.2s;
+}
+
+.job-card:hover {
+  @apply bg-neutral-50;
+}
+
+.job-card__image-wrap {
+  @apply relative overflow-hidden aspect-square;
+}
+
+.job-card__img {
+  @apply w-full h-full object-cover absolute inset-0;
+  transition: opacity 0.4s ease;
+}
+
+.job-card__img--robot {
+  opacity: 0;
+}
+
+.job-card:hover .job-card__img--human {
+  opacity: 0;
+}
+
+.job-card:hover .job-card__img--robot {
+  opacity: 1;
+}
+
+.job-card__footer {
+  @apply flex flex-col gap-1 px-3 py-3 border-t border-neutral-200;
+}
+
+.job-card__title {
+  @apply text-sm font-medium;
+}
+
+.job-card__income {
+  @apply text-xs text-neutral-400;
+}
+
+/* ─── Modal ──────────────────────────────────────────── */
+
+#modal-overlay {
+  display: none;
+  @apply fixed inset-0 z-50 items-center justify-center;
+  background: rgba(0, 0, 0, 0.45);
+}
+
+#modal-panel {
+  @apply bg-white relative max-w-2xl w-full mx-4 overflow-y-auto;
+  max-height: 90vh;
+}
+
+#modal-close {
+  @apply absolute top-4 right-5 text-2xl text-neutral-400 hover:text-neutral-900 leading-none cursor-pointer bg-transparent border-none;
+}
+
+.modal-header {
+  @apply px-8 pt-10 pb-6 border-b border-neutral-100;
+}
+
+.modal-job-title {
+  @apply text-3xl font-light mb-2;
+}
+
+.modal-income {
+  @apply text-sm text-neutral-400;
+}
+
+.modal-robots {
+  @apply px-8 py-6;
+}
+
+.modal-robots-heading {
+  @apply text-xs uppercase tracking-widest text-neutral-400 mb-6;
+}
+
+.modal-robot {
+  @apply flex gap-6 mb-8;
+}
+
+.modal-robot__image {
+  @apply w-32 h-32 object-cover flex-shrink-0 bg-neutral-100;
+}
+
+.modal-robot__info {
+  @apply flex flex-col gap-1;
+}
+
+.modal-robot__name {
+  @apply font-medium text-base;
+}
+
+.modal-robot__company {
+  @apply text-xs text-neutral-400 uppercase tracking-wide mb-1;
+}
+
+.modal-robot__description {
+  @apply text-sm text-neutral-600 leading-relaxed;
+}
+
+.modal-robot__price {
+  @apply text-sm font-medium mt-2;
+}
