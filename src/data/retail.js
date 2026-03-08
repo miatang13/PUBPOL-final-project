@@ -7,8 +7,8 @@ export default {
   jobs: [
     {
       title: 'Cashier',
-      humanImage: '/images/retail/cashier-human.jpg',
-      robotImage: '/images/retail/cashier-robot.jpg',
+      humanImage: 'https://picsum.photos/seed/r1h/600/600',
+      robotImage: 'https://picsum.photos/seed/r1r/600/600',
       annualIncome: 28000,
       robots: [
         {
@@ -17,14 +17,14 @@ export default {
           description:
             'An autonomous checkout system using computer vision to identify items and process payments without human cashiers.',
           price: 'SaaS model, ~$2,500/month',
-          image: '/images/robots/dash.jpg',
+          image: 'https://picsum.photos/seed/r1rb/400/400',
         },
       ],
     },
     {
       title: 'Shelf Stocker',
-      humanImage: '/images/retail/stocker-human.jpg',
-      robotImage: '/images/retail/stocker-robot.jpg',
+      humanImage: 'https://picsum.photos/seed/r2h/600/600',
+      robotImage: 'https://picsum.photos/seed/r2r/600/600',
       annualIncome: 29000,
       robots: [
         {
@@ -33,7 +33,7 @@ export default {
           description:
             'An autonomous inventory robot that roams store aisles to audit shelf stock levels, pricing accuracy, and product placement.',
           price: '$35,000/year (lease)',
-          image: '/images/robots/tally.jpg',
+          image: 'https://picsum.photos/seed/r2rb/400/400',
         },
       ],
     },

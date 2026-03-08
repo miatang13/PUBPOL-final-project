@@ -7,8 +7,8 @@ export default {
   jobs: [
     {
       title: 'Crop Harvester',
-      humanImage: '/images/agriculture/harvester-human.jpg',
-      robotImage: '/images/agriculture/harvester-robot.jpg',
+      humanImage: 'https://picsum.photos/seed/a1h/600/600',
+      robotImage: 'https://picsum.photos/seed/a1r/600/600',
       annualIncome: 32000,
       robots: [
         {
@@ -17,14 +17,14 @@ export default {
           description:
             'An autonomous strawberry harvesting robot with 24 robotic arms and computer vision to identify ripe fruit, picking up to 4,000 strawberries per hour.',
           price: '$100,000 – $150,000',
-          image: '/images/robots/agrobot.jpg',
+          image: 'https://picsum.photos/seed/a1rb/400/400',
         },
       ],
     },
     {
       title: 'Fruit Picker',
-      humanImage: '/images/agriculture/picker-human.jpg',
-      robotImage: '/images/agriculture/picker-robot.jpg',
+      humanImage: 'https://picsum.photos/seed/a2h/600/600',
+      robotImage: 'https://picsum.photos/seed/a2r/600/600',
       annualIncome: 30000,
       robots: [
         {
@@ -33,7 +33,7 @@ export default {
           description:
             'An AI-powered harvesting robot for berry crops that navigates autonomously between rows and picks only ripe fruit.',
           price: 'Lease-based, undisclosed',
-          image: '/images/robots/tortuga.jpg',
+          image: 'https://picsum.photos/seed/a2rb/400/400',
         },
       ],
     },

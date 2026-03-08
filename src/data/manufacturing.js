@@ -7,8 +7,8 @@ export default {
   jobs: [
     {
       title: 'Welding Technician',
-      humanImage: '/images/manufacturing/welder-human.jpg',
-      robotImage: '/images/manufacturing/welder-robot.jpg',
+      humanImage: 'https://picsum.photos/seed/m1h/600/600',
+      robotImage: 'https://picsum.photos/seed/m1r/600/600',
       annualIncome: 47000,
       robots: [
         {
@@ -17,14 +17,14 @@ export default {
           description:
             'High-speed arc welding robot with a slim arm design, capable of accessing tight spaces on complex assemblies.',
           price: '$75,000 – $150,000',
-          image: '/images/robots/fanuc-arcmate.jpg',
+          image: 'https://picsum.photos/seed/m1rb/400/400',
         },
       ],
     },
     {
       title: 'Assembly Line Worker',
-      humanImage: '/images/manufacturing/assembly-human.jpg',
-      robotImage: '/images/manufacturing/assembly-robot.jpg',
+      humanImage: 'https://picsum.photos/seed/m2h/600/600',
+      robotImage: 'https://picsum.photos/seed/m2r/600/600',
       annualIncome: 37000,
       robots: [
         {
@@ -33,7 +33,7 @@ export default {
           description:
             'A dual-arm collaborative robot designed for small-parts assembly, working safely alongside humans without safety caging.',
           price: '$40,000 – $80,000',
-          image: '/images/robots/yumi.jpg',
+          image: 'https://picsum.photos/seed/m2rb/400/400',
         },
       ],
     },
