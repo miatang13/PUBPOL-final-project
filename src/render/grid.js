@@ -9,6 +9,7 @@ const fmt = new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD',
 export function renderGrid(fields, container, onJobClick) {
   fields.forEach((fieldData) => {
     const section = document.createElement('section')
+    section.id = `section-${fieldData.field.toLowerCase()}`
     section.className = 'field-section'
     section.dataset.field = fieldData.field
 

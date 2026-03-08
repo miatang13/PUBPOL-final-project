@@ -5,6 +5,37 @@
 body {
   @apply bg-white text-neutral-900 antialiased;
   font-family: 'Georgia', serif;
+  padding-left: 160px;
+}
+
+@media (max-width: 768px) {
+  body { padding-left: 0; }
+}
+
+/* ─── Side nav ──────────────────────────────────────── */
+
+#side-nav {
+  @apply fixed top-0 left-0 h-full flex flex-col justify-center px-6 z-40;
+  width: 160px;
+  border-right: 1px solid theme('colors.neutral.100');
+}
+
+.nav-link {
+  @apply block text-xs text-neutral-400 py-2 leading-snug;
+  transition: color 0.2s;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  @apply text-neutral-900;
+}
+
+.nav-link--active {
+  @apply text-neutral-900 font-medium;
+}
+
+@media (max-width: 768px) {
+  #side-nav { display: none; }
 }
 
 /* ─── Hero ──────────────────────────────────────────── */
@@ -87,6 +118,21 @@ body {
 
 .job-card__income {
   @apply text-xs text-neutral-400;
+}
+
+/* ─── Text sections ──────────────────────────────────── */
+
+.text-section {
+  @apply max-w-2xl mx-auto px-8 mb-24 pt-6;
+  border-top: 1px solid theme('colors.neutral.200');
+}
+
+.text-section__heading {
+  @apply text-xs uppercase tracking-widest text-neutral-400 mb-8;
+}
+
+.text-section__body {
+  @apply text-sm text-neutral-600 leading-loose mb-4;
 }
 
 /* ─── Modal ──────────────────────────────────────────── */
