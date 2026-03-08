@@ -63,6 +63,52 @@ const corvusOneDescription = `## **Corvus Robotics | Corvus One**
 * **Vision Suite:** Long-range barcode scanning and Optical Character Recognition (OCR).
 * **Safety:** 360° obstacle detection; UL-compliant for operation during business hours.`;
 
+const chefRoboticsDescription = `## **Chef Robotics | AI-Enabled Food Production System**
+
+**The Goal:** To solve the chronic labor shortages and high turnover in commercial kitchens by automating the high-volume, repetitive task of portioning and plating prepared foods.
+
+**The Tech:** The Chef AI-enabled system is a flexible robotic workstation designed to integrate seamlessly into existing production lines. It leverages **proprietary computer vision and imitation learning** to handle a vast diversity of ingredients—from viscous sauces and sticky grains to delicate proteins—without requiring constant re-programming. The robot utilizes a "universal" approach to food handling, featuring quick-change utensils and real-time weight monitoring to ensure every tray or bowl meets exact portion specifications. Unlike traditional automation, it is designed for rapid deployment, often going live in as little as 30 minutes for new menu items.
+
+**The Impact:** By taking over the most repetitive assembly tasks, Chef Robotics allows food manufacturers and ghost kitchens to increase their output by up to 2x while significantly reducing food waste through precise portion control. It transitions the human role from "manual scooping" to "system supervision," improving workplace ergonomics and allowing facilities to maintain 24/7 operations without the volatility of manual labor availability.
+
+### **Quick Specs**
+* **Primary Function:** Autonomous food portioning and assembly for high-volume kitchens.
+* **Ingredient Versatility:** Handles thousands of SKUs including proteins, grains, and liquids.
+* **Onboard Intelligence:** Computer vision-based portioning with real-time weight adjustment.
+* **Hygiene Standards:** Food-grade construction with wash-down compatible components.
+* **Deployment:** Mobile, small-footprint design that fits into existing linear or circular lines.`;
+
+
+const bellaBotProDescription = `## **Pudu Robotics | BellaBot Pro**
+
+**The Goal:** To elevate the hospitality and retail experience by blending high-capacity autonomous delivery with bionic, "human-like" personality and AI-driven marketing.
+
+**The Tech:** The BellaBot Pro is a significant evolution of the industry-leading bionic delivery robot, featuring the upgraded **PUDU VSLAM+** technology for marker-less deployment in massive, high-ceiling venues (up to 200,000 m²). It utilizes a sophisticated sensor fusion of 2 front-view cameras, 3 RGBD depth sensors, and LiDAR for 360-degree omnidirectional obstacle avoidance. This "Pro" model introduces an integrated **18.5-inch advertising screen** and AI-powered dish recognition, which allows the robot to identify and broadcast specific menu items to guests. With its automotive-grade adaptive suspension and "Crosswalk Caution" ground projectors, it maintains high stability and safety even in the most crowded restaurant and retail aisles.
+
+**The Impact:** Beyond simple food delivery, BellaBot Pro acts as a mobile marketing platform and customer service agent, capable of personalized greetings and interactive "ear-touch" responses. It reduces the physical strain on staff by handling up to 40kg of payload per trip, effectively replacing the "heavy lifting" of service. This allows human servers to focus on tableside hospitality, while the robot's multimodal interactions—ranging from over 60 facial expressions to AI voice prompts—drive higher customer engagement and advertisement conversion rates.
+
+### **Quick Specs**
+* **Primary Function:** Autonomous bionic delivery, customer greeting, and mobile advertising.
+* **Payload Capacity:** 40kg total (10kg per tray across 4 adjustable levels).
+* **Agility:** Specialized for tight spaces with a minimum path clearance of just 65cm.
+* **Interaction:** 10.1" interactive touch screen + 18.5" advertising display + AI Voice.
+* **Safety:** 360° Omni-Sense perception with intersection ground-projection alerts.`;
+
+const toniDescription = `## **Makr Shakr | Toni**
+
+**The Goal:** To transform the traditional bar experience into a high-tech social spectacle by combining precision mixology with the graceful, synchronized movements of a professional choreographer.
+
+**The Tech:** Toni is a sophisticated robotic bartending system featuring two high-performance **KUKA KR AGILUS arms** that mimic human gestures. Modeled on the movements of Italian dancer Marco Pelle, the arms divide labor: one shakes and stirs while the other pours and muddles. The system manages up to **158 bottles of spirits** suspended from the ceiling and includes an integrated lemon cutter, mint dispenser, and ice crusher. For safety, it utilizes an "invisible fence" system with motion sensors that instantly halt the robots' fast-moving arms if a guest or object enters the work zone, allowing for a barrier-free, open-counter experience.
+
+**The Impact:** Toni moves bartending from a service task to an interactive performance, capable of crafting up to **80 complex cocktails per hour** with 100% consistency. By allowing customers to customize their own recipes via a mobile app, it shifts the role of "bartender" to the user, who can experiment with millions of drink combinations. This data-driven approach allows venue owners to monitor alcohol consumption in real-time, optimize inventory, and drive massive social media engagement through the robot's "viral" acrobatic mixing sequences.
+
+### **Quick Specs**
+* **Primary Function:** Autonomous robotic mixology and beverage service.
+* **Robotic Hardware:** Dual KUKA KR AGILUS industrial arms.
+* **Capacity:** 158 spirit bottles + 10 syrup dispensers + integrated beer taps.
+* **Performance:** Up to 80 drinks/hour (Toni) or 250 drinks/hour (Toni Veloce).
+* **Safety Features:** Laser fences and motion sensors for human-robot proximity.`;
+
 export default {
   field: 'Retail',
   
@@ -124,6 +170,51 @@ export default {
           description: corvusOneDescription,
           price: '$50,000/year (lease)',
           image: 'images/retail/corvus_one.png',
+        },
+      ],
+    },
+     {
+      title: 'Food Production Workers',
+      humanImage: 'images/retail/prep_cook.png',
+      robotImage: 'images/retail/chef_robotics.png',
+      annualIncome: 46000,
+      robots: [
+        {
+          name: 'Chef Robotics',
+          company: 'Chef Robotics',
+          description: chefRoboticsDescription,
+          price: '$50,000/year (lease)',
+          image: 'images/retail/chef_robotics.png',
+        },
+      ],
+    },
+         {
+      title: 'Food Server',
+      humanImage: 'images/retail/server.png',
+      robotImage: 'images/retail/bellabot.png',
+      annualIncome: 46000,
+      robots: [
+        {
+          name: 'BellaBot',
+          company: 'PuDu Robotics',
+          description: bellaBotProDescription,
+          price: '$50,000/year (lease)',
+          image: 'images/retail/bellabot.png',
+        },
+      ],
+    },
+    {
+      title: 'Bartender',
+      humanImage: 'images/retail/bartender.png',
+      robotImage: 'images/retail/makrshakr.png',
+      annualIncome: 46000,
+      robots: [
+        {
+          name: 'MakrShakr',
+          company: 'MakrShakr',
+          description: toniDescription,
+          price: '$50,000/year (lease)',
+          image: 'images/retail/makrshakr.png',
         },
       ],
     },
