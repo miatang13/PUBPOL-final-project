@@ -325,8 +325,8 @@ body {
 }
 
 .modal-robot__image {
-  width: 112px;
-  height: 112px;
+  width: 240px;
+  height: 240px;
   object-fit: cover;
   flex-shrink: 0;
   background: #f0f0f0;
