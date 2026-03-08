@@ -4,6 +4,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { fields } from './data/index.js'
 import { renderGrid } from './render/grid.js'
 import { renderNav } from './render/nav.js'
+import { renderBackToTop } from './render/backToTop.js'
 import { initModal, openModal } from './render/modal.js'
 
 gsap.registerPlugin(ScrollTrigger)
@@ -62,6 +63,11 @@ function init() {
     <header id="hero">
       <h1 id="hero-title">The Automated Workforce</h1>
       <p id="hero-subtitle">Across industries, robots are taking over tasks once performed by humans.<br>Explore who — and what — is replacing them.</p>
+      <div id="hero-authors">
+        <a class="author-link" href="https://www.michaelpiseno.com/" target="_blank" rel="noopener">Michael Piseno</a>
+        <span class="author-sep">&</span>
+        <a class="author-link" href="https://www.mia-tang.com/" target="_blank" rel="noopener">Mia Tang</a>
+      </div>
     </header>
     <main id="main-content"></main>
   `
@@ -86,8 +92,9 @@ function init() {
     'Sunt in culpa qui officia deserunt mollit anim id est laborum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo, at varius nisi interdum id.',
   ]))
 
-  // Side nav (after sections exist in DOM)
+  // Side nav + back to top (after sections exist in DOM)
   renderNav(fields)
+  renderBackToTop()
 
   // Animate hero on load
   animateIn('#hero-title', { y: 30, duration: 0.9 })

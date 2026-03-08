@@ -4,6 +4,7 @@
  */
 export function renderNav(fields) {
   const items = [
+    { label: 'Background', id: 'section-background' },
     ...fields.map((f) => ({
       label: f.field,
       id: `section-${f.field.toLowerCase()}`,

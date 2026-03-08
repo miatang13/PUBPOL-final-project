@@ -17,7 +17,7 @@ body {
 #side-nav {
   @apply fixed top-0 left-0 h-full flex flex-col justify-center px-6 z-40;
   width: 160px;
-  border-right: 1px solid theme('colors.neutral.100');
+  border-right: 1px solid black;
 }
 
 .nav-link {
@@ -49,7 +49,30 @@ body {
 }
 
 #hero-subtitle {
-  @apply text-base text-neutral-500 leading-relaxed;
+  @apply text-base text-neutral-500 leading-relaxed mb-8;
+}
+
+#hero-authors {
+  @apply flex items-center justify-center gap-3 mt-2;
+  border-top: 1px solid black;
+  padding-top: 1.25rem;
+  display: inline-flex;
+}
+
+.author-link {
+  @apply text-xs uppercase tracking-widest text-neutral-900;
+  text-decoration: none;
+  border-bottom: 1px solid black;
+  padding-bottom: 1px;
+  transition: opacity 0.2s;
+}
+
+.author-link:hover {
+  opacity: 0.5;
+}
+
+.author-sep {
+  @apply text-xs text-neutral-400;
 }
 
 /* ─── Field sections ─────────────────────────────────── */
@@ -59,13 +82,16 @@ body {
 }
 
 .field-heading {
-  @apply text-xs uppercase tracking-widest text-neutral-400 mb-8 border-t border-neutral-200 pt-6;
+  @apply text-xs uppercase tracking-widest text-neutral-400 mb-8 pt-6;
+  border-top: 1px solid black;
 }
 
 /* ─── Job grid ───────────────────────────────────────── */
 
 .job-grid {
-  @apply grid grid-cols-2 gap-px bg-neutral-200;
+  @apply grid grid-cols-2 gap-px;
+  background-color: black;
+  border: 1px solid black;
 }
 
 @media (min-width: 768px) {
@@ -109,7 +135,8 @@ body {
 }
 
 .job-card__footer {
-  @apply flex flex-col gap-1 px-3 py-3 border-t border-neutral-200;
+  @apply flex flex-col gap-1 px-3 py-3;
+  border-top: 1px solid black;
 }
 
 .job-card__title {
@@ -124,7 +151,7 @@ body {
 
 .text-section {
   @apply max-w-2xl mx-auto px-8 mb-24 pt-6;
-  border-top: 1px solid theme('colors.neutral.200');
+  border-top: 1px solid black;
 }
 
 .text-section__heading {
@@ -146,6 +173,7 @@ body {
 #modal-panel {
   @apply bg-white relative max-w-2xl w-full mx-4 overflow-y-auto;
   max-height: 90vh;
+  border: 1px solid black;
 }
 
 #modal-close {
@@ -153,7 +181,8 @@ body {
 }
 
 .modal-header {
-  @apply px-8 pt-10 pb-6 border-b border-neutral-100;
+  @apply px-8 pt-10 pb-6;
+  border-bottom: 1px solid black;
 }
 
 .modal-job-title {
@@ -198,4 +227,18 @@ body {
 
 .modal-robot__price {
   @apply text-sm font-medium mt-2;
+}
+
+/* ─── Back to top ─────────────────────────────────────── */
+
+#back-to-top {
+  @apply fixed bottom-6 right-6 z-40 bg-white cursor-pointer flex items-center justify-center;
+  width: 36px;
+  height: 36px;
+  border: 1px solid black;
+  transition: background 0.2s;
+}
+
+#back-to-top:hover {
+  @apply bg-neutral-900 text-white;
 }
