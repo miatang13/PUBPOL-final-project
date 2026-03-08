@@ -7,15 +7,16 @@ const fmt = new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD',
  * @param {(job: import('../data/index.js').Job) => void} onJobClick
  */
 export function renderGrid(fields, container, onJobClick) {
-  fields.forEach((fieldData) => {
+  fields.forEach((fieldData, i) => {
     const section = document.createElement('section')
     section.id = `section-${fieldData.field.toLowerCase()}`
     section.className = 'field-section'
     section.dataset.field = fieldData.field
 
+    const index = String(i + 1).padStart(2, '0')
     const heading = document.createElement('h2')
     heading.className = 'field-heading'
-    heading.textContent = fieldData.field
+    heading.innerHTML = `<span class="field-heading__index">${index}</span> ${fieldData.field}`
     section.appendChild(heading)
 
     const grid = document.createElement('div')

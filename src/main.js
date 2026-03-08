@@ -41,12 +41,15 @@ export function scrollReveal(targets, options = {}) {
 
 // --- Helpers ---
 
+let textSectionCount = 0
 function buildTextSection(id, title, paragraphs) {
+  textSectionCount++
+  const index = String(textSectionCount).padStart(2, '0')
   const section = document.createElement('section')
   section.id = id
   section.className = 'text-section'
   section.innerHTML = `
-    <h2 class="text-section__heading">${title}</h2>
+    <h2 class="text-section__heading"><span class="section-index">${index}</span> ${title}</h2>
     ${paragraphs.map((p) => `<p class="text-section__body">${p}</p>`).join('')}
   `
   return section
