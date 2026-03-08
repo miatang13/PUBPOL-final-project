@@ -46,6 +46,51 @@ const lightStrikeDescription = `## **Xenex | LightStrike (Pulsed Xenon UV Robot)
 * **Safety:** Triple-sensor motion detection and emergency stop capabilities.
 * **Connectivity:** WiFi/Cellular enabled for real-time reporting and usage tracking.`;
 
+const alettaDescription = `## **Vitestro | Aletta**
+
+**The Goal:** To standardize and automate the process of blood drawing, addressing the global shortage of phlebotomists while improving the accuracy and comfort of the patient experience.
+
+**The Tech:** Aletta is an autonomous venipuncture device that integrates **AI-driven ultrasound** with sophisticated infrared (IR) multi-spectral imaging to create a high-precision map of a patient's veins. This "dual-mode" visualization allows the system to identify the optimal insertion point in 3D space with sub-millimeter accuracy. Once the target is locked, a robotic needle-insertion mechanism—guided by real-time force feedback sensors—performs the draw with consistent pressure and depth. The system is designed as a self-contained kiosk, featuring an automated tourniquet, integrated skin disinfection, and a labeling system that secures the sample immediately to eliminate human labeling errors.
+
+**The Impact:** By automating the most common invasive medical procedure, Aletta reduces the variability inherent in manual blood draws, which often require multiple "sticks" in difficult patients. In clinical trials, the system has demonstrated high success rates on the first attempt, significantly lowering patient anxiety and procedural time. For healthcare facilities, Aletta enables a "high-throughput" phlebotomy model where one technician can oversee multiple autonomous stations, drastically increasing lab efficiency and reducing operational costs.
+
+### **Quick Specs**
+* **Primary Function:** Autonomous robotic venipuncture (blood drawing).
+* **Imaging Suite:** AI-powered ultrasound + multi-spectral infrared (IR) sensors.
+* **Accuracy:** Sub-millimeter robotic needle positioning with real-time tracking.
+* **Safety:** Fully automated disinfection and force-sensing needle retraction.
+* **Workflow:** Integrated barcode labeling and WMS/LIS (Lab Information System) syncing.`;
+
+const artasDescription = `## **Restoration Robotics | ARTAS iX**
+
+**The Goal:** To eliminate the manual fatigue and variability of hair restoration surgery by automating the identification and extraction of follicular units with robotic precision.
+
+**The Tech:** The ARTAS iX is a sophisticated computer-assisted system that utilizes **high-definition stereoscopic vision** to analyze the scalp at a rate of 60 times per second. Its AI algorithms monitor the characteristics of each hair follicle—including angle, orientation, and density—to select the most viable units for harvesting. The system features a 7-DOF (Degrees of Freedom) robotic arm that performs minimally invasive **Follicular Unit Extraction (FUE)** with sub-millimeter accuracy. This "closed-loop" system also includes a site-making function, which uses the same robotic precision to create recipient sites that avoid damaging existing healthy hair.
+
+**The Impact:** By automating the most tedious and repetitive parts of the procedure, ARTAS iX ensures 100% consistency from the first graft to the last, a feat nearly impossible for a human surgeon during an 8-hour session. For the patient, this results in significantly reduced procedure times, virtually no linear scarring, and a more natural-looking hair distribution. The system transforms hair restoration from a labor-intensive craft into a predictable, data-driven medical procedure that maximizes graft survival rates.
+
+### **Quick Specs**
+* **Primary Function:** Autonomous follicular unit extraction (FUE) and site making.
+* **Imaging Suite:** High-definition 3D stereoscopic vision with 44-micron resolution.
+* **Robotic Hardware:** 7-axis medical-grade robotic arm.
+* **Speed:** Capable of harvesting over 1,000 grafts per hour.
+* **Safety:** Real-time skin-movement tracking and force-sensing needle retraction.`;
+
+const yomiDescription = `## **Neocis | Yomi**
+
+**The Goal:** To eliminate the manual variability of dental implant surgery by providing robotic guidance that ensures perfectly centered, angled, and deepened implants every time.
+
+**The Tech:** Yomi is the first and only FDA-cleared robotic device for dental implant surgery, utilizing a specialized **haptic guidance system** that acts as a "GPS for the drill." Unlike traditional static surgical guides that block a clinician's view, Yomi provides physical feedback to the surgeon’s hand, preventing the drill from deviating from the pre-planned 3D surgical path. The system integrates high-resolution CT scans with proprietary software to map the patient's anatomy in real-time, allowing for "on-the-fly" plan adjustments if clinical conditions change mid-procedure. Its multi-jointed robotic arm tracks the patient's head movements continuously, ensuring the drill tip remains precisely calibrated to the jaw's position.
+
+**The Impact:** By transitioning dental surgery from freehand execution to robotic assistance, Yomi significantly reduces the risk of nerve damage or sinus complications while enabling more frequent use of minimally invasive, "flapless" techniques. For the patient, this translates to smaller incisions, less postoperative pain, and faster recovery times. For the dental practice, the system provides a level of digital accuracy and procedural predictability that shortens surgery duration and ensures a higher success rate for complex full-arch restorations.
+
+### **Quick Specs**
+* **Primary Function:** Robot-assisted dental implant surgery and surgical planning.
+* **Guidance Type:** Haptic (physical feedback) + multi-sensory visual/audio alerts.
+* **Onboard Intelligence:** Real-time patient tracking and 3D CT-to-patient registration.
+* **Clinical Clearance:** FDA-cleared for both partially edentulous and fully edentulous patients.
+* **Workflow:** Digital end-to-end integration from CT scan to final crown placement.`;
+
 /** @type {import('./index.js').Field} */
 export default {
   field: 'Healthcare',
@@ -90,6 +135,49 @@ export default {
           company: 'Xenex',
           description: lightStrikeDescription,
           image: 'images/healthcare/lightstrike.png',
+        },
+      ],
+    },
+      {
+      title: 'Phlebotomist',
+      humanImage: 'images/healthcare/phlebotomist.png',
+      robotImage: 'images/healthcare/aletta.png',
+      annualIncome: 55000,
+      robots: [
+        {
+          name: 'Aletta',
+          company: 'Vitestro',
+          description: alettaDescription,
+          image: 'images/healthcare/aletta.png',
+        },
+      ],
+    },
+
+      {
+      title: 'Hair Restoration Surgeon',
+      humanImage: 'images/healthcare/hair_restoration_surgeon.png',
+      robotImage: 'images/healthcare/artas_ix.jpg',
+      annualIncome: 55000,
+      robots: [
+        {
+          name: 'ARTAS iX',
+          company: 'Restoration Robotics',
+          description: artasDescription,
+          image: 'images/healthcare/artas_ix.jpg',
+        },
+      ],
+    },
+     {
+      title: 'Periodontist',
+      humanImage: 'images/healthcare/periodontist.png',
+      robotImage: 'images/healthcare/yomi.png',
+      annualIncome: 55000,
+      robots: [
+        {
+          name: 'Yomi',
+          company: 'Neocis',
+          description: yomiDescription,
+          image: 'images/healthcare/yomi.png',
         },
       ],
     },
