@@ -261,8 +261,7 @@ body {
   background: #fff;
   border: var(--border);
   position: relative;
-  max-width: 600px;
-  width: calc(100% - 32px);
+  width: 70%;
   max-height: 90vh;
   overflow-y: auto;
 }
