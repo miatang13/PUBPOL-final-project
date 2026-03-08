@@ -2,6 +2,8 @@ import './style.css'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { fields } from './data/index.js'
+import background from './data/background.js'
+import policy from './data/policy.js'
 import { renderGrid } from './render/grid.js'
 import { renderNav } from './render/nav.js'
 import { renderBackToTop } from './render/backToTop.js'
@@ -78,10 +80,7 @@ function init() {
   const main = document.getElementById('main-content')
 
   // Background and Motivation section
-  main.appendChild(buildTextSection('section-background', 'Background and Motivation', [
-    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.',
-    'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Curabitur pretium tincidunt lacus. Nulla gravida orci a odio, et tempus feugiat. Nullam varius turpis in molestie tincidunt. Quisque ornare risus quis ligula vestibulum, sed cursus enim blandit.',
-  ]))
+  main.appendChild(buildTextSection('section-background', background.title, background.paragraphs))
 
   // Industry grids
   const gridRoot = document.createElement('div')
@@ -90,10 +89,7 @@ function init() {
   renderGrid(fields, gridRoot, (job) => openModal(job))
 
   // Policy and Geopolitics section
-  main.appendChild(buildTextSection('section-policy', 'Policy and Geopolitics', [
-    'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.',
-    'Sunt in culpa qui officia deserunt mollit anim id est laborum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo, at varius nisi interdum id.',
-  ]))
+  main.appendChild(buildTextSection('section-policy', policy.title, policy.paragraphs))
 
   // Side nav + back to top (after sections exist in DOM)
   renderNav(fields)
