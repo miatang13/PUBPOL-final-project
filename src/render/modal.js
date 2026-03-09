@@ -70,7 +70,7 @@ function buildModalContent(job) {
   return `
     <div class="modal-header">
       <h2 class="modal-job-title">${job.title}</h2>
-      <p class="modal-income">Human annual income: ${fmt.format(job.annualIncome)}</p>
+      ${job.annualIncome != null ? `<p class="modal-income">Human annual income: ${fmt.format(job.annualIncome)}</p>` : ''}
     </div>
     <div class="modal-robots">
       <h3 class="modal-robots-heading">${job.robots.length === 1 ? 'Replacing Robot' : 'Replacing Robots'}</h3>

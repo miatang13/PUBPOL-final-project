@@ -48,7 +48,7 @@ function buildCard(job) {
     </div>
     <div class="job-card__footer">
       <span class="job-card__title">${job.title}</span>
-      <span class="job-card__income">${fmt.format(job.annualIncome)} / yr</span>
+      ${job.annualIncome != null ? `<span class="job-card__income">${fmt.format(job.annualIncome)} / yr</span>` : ''}
     </div>
   `
 
