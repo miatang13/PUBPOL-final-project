@@ -19,6 +19,13 @@ export function renderGrid(fields, container, onJobClick) {
     heading.innerHTML = `<span class="field-heading__index">${index}</span> ${fieldData.field}`
     section.appendChild(heading)
 
+    if (fieldData.description) {
+      const p = document.createElement('p')
+      p.className = 'field-description'
+      p.textContent = fieldData.description
+      section.appendChild(p)
+    }
+
     const grid = document.createElement('div')
     grid.className = 'job-grid'
 

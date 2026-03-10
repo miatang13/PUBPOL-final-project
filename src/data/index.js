@@ -2,12 +2,12 @@
 // To add a new field: create a new data file and add it to the array below.
 
 import warehousing from './warehousing.js'
-import manufacturing from './manufacturing.js'
+// import manufacturing from './manufacturing.js'
 import retail from './retail.js'
 import healthcare from './healthcare.js'
 import agriculture from './agriculture.js'
 
-export const fields = [warehousing, manufacturing, retail, healthcare, agriculture]
+export const fields = [warehousing, /* manufacturing, */ retail, healthcare, agriculture]
 
 /**
  * @typedef {Object} Robot
@@ -21,6 +21,7 @@ export const fields = [warehousing, manufacturing, retail, healthcare, agricultu
 /**
  * @typedef {Object} Job
  * @property {string} title
+ * @property {string} [description]
  * @property {string} humanImage  - path relative to /public
  * @property {string} robotImage  - path relative to /public
  * @property {number} annualIncome
@@ -30,5 +31,6 @@ export const fields = [warehousing, manufacturing, retail, healthcare, agricultu
 /**
  * @typedef {Object} Field
  * @property {string} field
+ * @property {string} [description]
  * @property {Job[]} jobs
  */

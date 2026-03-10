@@ -162,10 +162,18 @@ body {
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--color-muted);
-  margin-bottom: 32px;
+  margin-bottom: 24px;
   display: flex;
   align-items: center;
   gap: 12px;
+}
+
+.field-description {
+  margin-top: -8px;
+  margin-bottom: 28px;
+  line-height: 1.6;
+  text-align: justify;
+  color: var(--color-muted);
 }
 
 /* ─── Job grid ───────────────────────────────────────── */
@@ -240,9 +248,19 @@ body {
   color: #000;
 }
 
+.job-card__description {
+  font-size: 11px;
+  color: var(--color-muted);
+  line-height: 1.5;
+  margin: 4px 0 0;
+}
+
 .job-card__income {
   font-size: 11px;
   color: var(--color-muted);
+  border-top: var(--border);
+  padding-top: 8px;
+  margin-top: 8px;
 }
 
 /* ─── Modal ──────────────────────────────────────────── */
@@ -293,6 +311,13 @@ body {
   font-weight: 300;
   letter-spacing: -0.01em;
   margin-bottom: 6px;
+}
+
+.modal-job-description {
+  font-size: 13px;
+  color: var(--color-muted);
+  line-height: 1.6;
+  margin-bottom: 12px;
 }
 
 .modal-income {
