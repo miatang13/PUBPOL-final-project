@@ -7,6 +7,7 @@ import policy from './data/policy.js'
 import { renderGrid } from './render/grid.js'
 import { renderNav } from './render/nav.js'
 import { renderBackToTop } from './render/backToTop.js'
+import { renderDirectory } from './render/directory.js'
 import { initModal, openModal } from './render/modal.js'
 
 gsap.registerPlugin(ScrollTrigger)
@@ -79,6 +80,9 @@ function init() {
 
   const main = document.getElementById('main-content')
 
+  // Robot directory
+  main.appendChild(renderDirectory(fields))
+
   // Background and Motivation section
   main.appendChild(buildTextSection('section-background', background.title, background.paragraphs))
 
@@ -100,6 +104,8 @@ function init() {
   animateIn('#hero-subtitle', { y: 20, duration: 0.8, delay: 0.2 })
 
   // Scroll-reveal
+  scrollReveal('.directory-heading', { y: 20 })
+  scrollReveal('.directory-group', { y: 24 })
   scrollReveal('.text-section__heading', { y: 20 })
   scrollReveal('.text-section__body', { y: 16 })
   scrollReveal('.field-heading', { y: 24 })

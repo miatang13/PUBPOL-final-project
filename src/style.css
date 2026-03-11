@@ -407,6 +407,75 @@ body {
   margin-top: 6px;
 }
 
+/* ─── Robot directory ─────────────────────────────────── */
+
+.directory-section {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 64px 32px;
+  border-bottom: var(--border);
+}
+
+.directory-heading {
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-muted);
+  margin-bottom: 32px;
+}
+
+.directory-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+}
+
+@media (min-width: 640px) {
+  .directory-grid { grid-template-columns: repeat(4, 1fr); }
+}
+
+.directory-group__field {
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  margin-bottom: 12px;
+}
+
+.directory-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.directory-item {
+  margin-bottom: 10px;
+}
+
+.directory-link {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  text-decoration: none;
+  transition: opacity 0.15s;
+}
+
+.directory-link:hover {
+  opacity: 0.5;
+}
+
+.directory-link__robot {
+  font-size: 12px;
+  font-weight: 500;
+  color: #000;
+}
+
+.directory-link__company {
+  font-size: 10px;
+  letter-spacing: 0.04em;
+  color: var(--color-muted);
+}
+
 /* ─── Back to top ─────────────────────────────────────── */
 
 #back-to-top {

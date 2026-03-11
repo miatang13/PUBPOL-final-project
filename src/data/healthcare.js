@@ -91,9 +91,14 @@ const yomiDescription = `## **Neocis | Yomi**
 * **Clinical Clearance:** FDA-cleared for both partially edentulous and fully edentulous patients.
 * **Workflow:** Digital end-to-end integration from CT scan to final crown placement.`;
 
+const healthcareDescription = `
+Healthcare is one of the most labor-intensive industries, with clinical staff spending a significant portion of their shifts on non-patient-facing tasks like transporting supplies, disinfecting rooms, and drawing blood. Chronic staffing shortages and clinician burnout have accelerated interest in robotic solutions across the care continuum. Robots in healthcare span a wide range: autonomous mobile robots that handle hospital logistics, UV disinfection systems that eliminate pathogens, precision surgical assistants that guide implant placement, and even autonomous blood-draw devices. Because these systems operate in safety-critical environments alongside vulnerable patients, they face some of the most rigorous regulatory and reliability standards of any industry.
+`;
+
 /** @type {import('./index.js').Field} */
 export default {
   field: 'Healthcare',
+  description: healthcareDescription,
   jobs: [
     {
       title: 'Clinical Support Technician',

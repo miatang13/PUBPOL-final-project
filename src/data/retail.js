@@ -109,9 +109,13 @@ const toniDescription = `## **Makr Shakr | Toni**
 * **Performance:** Up to 80 drinks/hour (Toni) or 250 drinks/hour (Toni Veloce).
 * **Safety Features:** Laser fences and motion sensors for human-robot proximity.`;
 
+const retailDescription = `
+Retail and food service employ millions of workers in roles that range from stocking shelves and managing inventory to preparing meals and serving customers. These industries face persistent labor shortages, high turnover rates, and razor-thin margins — making them prime targets for automation. Robots in this space fall into two broad categories: back-of-house systems that handle inventory tracking, warehousing, and food preparation, and front-of-house robots that interact directly with customers as servers, bartenders, or greeters. Unlike industrial automation, retail robots must operate safely alongside shoppers and diners in unstructured, crowded environments, which demands advanced navigation, social awareness, and compact design.
+`;
+
 export default {
   field: 'Retail',
-  
+  description: retailDescription,
   jobs: [
     {
       title: 'Stock Clerk',
