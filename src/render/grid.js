@@ -1,3 +1,5 @@
+import { marked } from 'marked'
+
 const fmt = new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD', maximumFractionDigits: 0 })
 
 /**
@@ -20,10 +22,10 @@ export function renderGrid(fields, container, onJobClick) {
     section.appendChild(heading)
 
     if (fieldData.description) {
-      const p = document.createElement('p')
-      p.className = 'field-description'
-      p.textContent = fieldData.description
-      section.appendChild(p)
+      const div = document.createElement('div')
+      div.className = 'field-description'
+      div.innerHTML = marked.parse(fieldData.description)
+      section.appendChild(div)
     }
 
     const grid = document.createElement('div')

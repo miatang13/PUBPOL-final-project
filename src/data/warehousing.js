@@ -3,6 +3,7 @@
 
 /** @type {import('./index.js').Field} */
 
+
 const warehousingDescription = `
 Warehousing and logistics jobs involve the physical movement and organization of goods across a distribution center. A basic workflow might involve unloading a truck, palleting goods and moving them to storage, retrieving goods from storage, picking items for individual orders, and packaging and shipping orders. Businesses can maintain their own warehouses, or outsource to third-party logistics (3PL) providers that operate warehouses on their behalf.
 `;

@@ -176,6 +176,10 @@ body {
   color: var(--color-muted);
 }
 
+.field-description p + p {
+  margin-top: 1em;
+}
+
 /* ─── Job grid ───────────────────────────────────────── */
 
 .job-grid {
@@ -318,6 +322,10 @@ body {
   color: var(--color-muted);
   line-height: 1.6;
   margin-bottom: 12px;
+}
+
+.modal-job-description p + p {
+  margin-top: 1em;
 }
 
 .modal-income {
