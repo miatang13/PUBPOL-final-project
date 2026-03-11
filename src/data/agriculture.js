@@ -8,6 +8,8 @@ const agricultureDescription = `
 We focus on specialty crop farming, which the USDA defines as: fruits and vegetables, tree nuts, dried fruits, horticulture, and nursery crops (including floriculture). Specialty crops are interesting because they rely heavily on human labor and are a frontier for automation. They are different from "commodity crops", which are standardized and undifferentiated by producer. Examples of commodity crops include wheat, rice, and soybeans. Commodity crops are often grown at mass scale in rows, and are already largely automated, especially at the harvesting stage.
 
 Farming specialty crops involves various stages, including soil preparation and planting, crop monitoring, spraying and weeding, and harvesting.
+
+Commercial use of agricultural drones in the US is governed by the FAA's [**14 CFR Part 107**](https://www.faa.gov/newsroom/small-unmanned-aircraft-systems-uas-regulations-part-107) (effective 2016), which requires operators to hold a Remote Pilot Certificate, limits flights to visual line-of-sight at a maximum altitude of 400 feet, and restricts speed to 100 mph. For drones used in spraying, operators must also comply with [**14 CFR Part 137**](https://www.faa.gov/uas/advanced_operations/dispensing_chemicals) (Agricultural Aircraft Operations), which adds certification and safety requirements for dispensing chemicals from any aircraft — including unmanned ones. Together, these rules form the legal framework that made commercial drone-based crop scouting, mapping, and spraying routine across the US.
 `;
 
 

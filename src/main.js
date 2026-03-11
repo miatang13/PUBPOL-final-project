@@ -1,4 +1,5 @@
 import './style.css'
+import { marked } from 'marked'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { fields } from './data/index.js'
@@ -11,6 +12,15 @@ import { renderDirectory } from './render/directory.js'
 import { initModal, openModal } from './render/modal.js'
 
 gsap.registerPlugin(ScrollTrigger)
+
+// Configure marked to open all links in a new tab
+const renderer = new marked.Renderer()
+const originalLinkRenderer = renderer.link.bind(renderer)
+renderer.link = function ({ href, title, tokens }) {
+  const html = originalLinkRenderer({ href, title, tokens })
+  return html.replace('<a ', '<a target="_blank" rel="noopener" ')
+}
+marked.setOptions({ renderer })
 
 // --- Animation utilities ---
 

@@ -6,6 +6,8 @@
 
 const warehousingDescription = `
 Warehousing and logistics jobs involve the physical movement and organization of goods across a distribution center. A basic workflow might involve unloading a truck, palleting goods and moving them to storage, retrieving goods from storage, picking items for individual orders, and packaging and shipping orders. Businesses can maintain their own warehouses, or outsource to third-party logistics (3PL) providers that operate warehouses on their behalf.
+
+As autonomous mobile robots become standard in warehouses, safety is governed by [**ANSI/RIA R15.08-1-2020**](https://webstore.ansi.org/standards/ria/ansiriar15082020) — the first American National Standard written specifically for industrial mobile robots navigating shared workspaces. It classifies robots into three types (mobile platforms, robots with non-manipulator attachments, and mobile manipulators), and prescribes requirements for collision avoidance, emergency stops, and speed limits. While voluntary, OSHA treats R15.08 as the recognized benchmark for safe practice and can cite employers under the [General Duty Clause](https://www.osha.gov/laws-regs/oshact/section5-duties) for failing to follow it — making compliance effectively mandatory for any warehouse deploying AMRs.
 `;
 
 
