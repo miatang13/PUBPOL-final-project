@@ -1,5 +1,5 @@
 // WAREHOUSING — edit only this file for warehousing content
-// Image paths are relative to /public. Drop images in /public/images/warehousing/
+// Image paths are relative to /public. Drop images in /images/warehousing/
 
 /** @type {import('./index.js').Field} */
 
@@ -84,8 +84,8 @@ export default {
     {
       title: 'Container Unloading',
       description: containerUnloadingDescription,
-      humanImage: 'public/images/warehousing/container_unloader.png',
-      robotImage: 'public/images/warehousing/stretch.jpg',
+      humanImage: 'images/warehousing/container_unloader.png',
+      robotImage: 'images/warehousing/stretch.jpg',
       // annualIncome: 34000,
       robots: [
         {
@@ -93,15 +93,15 @@ export default {
           company: 'Boston Dynamics',
           description: stretchDescription,
           price: '$300K - $500K',
-          image: 'public/images/warehousing/stretch.jpg',
+          image: 'images/warehousing/stretch.jpg',
         },
       ],
     },
     {
       title: 'Palletization',
       description: palletizationDescription,
-      humanImage: 'public/images/warehousing/palletization.png',
-      robotImage: 'public/images/warehousing/thor.jpg',
+      humanImage: 'images/warehousing/palletization.png',
+      robotImage: 'images/warehousing/thor.jpg',
       // annualIncome: 39000,
       robots: [
         {
@@ -109,15 +109,15 @@ export default {
           company: 'Standard Bots',
           description: thorDescription,
           price: '$49K+',
-          image: 'public/images/warehousing/thor.jpg',
+          image: 'images/warehousing/thor.jpg',
         },
       ],
     },
     {
       title: 'Material Transport',
       description: materialTransportDescription,
-      humanImage: 'public/images/warehousing/material_transport.png',
-      robotImage: 'public/images/warehousing/SEER_SPT-1000.jpg',
+      humanImage: 'images/warehousing/material_transport.png',
+      robotImage: 'images/warehousing/SEER_SPT-1000.jpg',
       // annualIncome: 39000,
       robots: [
         {
@@ -125,15 +125,15 @@ export default {
           company: 'SEER Robotics',
           description: spt1000Description,
           price: 'Not disclosed',
-          image: 'public/images/warehousing/SEER_SPT-1000.jpg',
+          image: 'images/warehousing/SEER_SPT-1000.jpg',
         },
       ],
     },
     {
       title: 'Picking',
       description: pickingDescription,
-      humanImage: 'public/images/warehousing/picking.png',
-      robotImage: 'public/images/warehousing/sparrow.jpg',
+      humanImage: 'images/warehousing/picking.png',
+      robotImage: 'images/warehousing/sparrow.jpg',
       // annualIncome: 39000,
       robots: [
         {
@@ -141,7 +141,7 @@ export default {
           company: 'Amazon',
           description: sparrowDescription,
           price: 'Not disclosed',
-          image: 'public/images/warehousing/sparrow.jpg',
+          image: 'images/warehousing/sparrow.jpg',
         },
       ],
     },

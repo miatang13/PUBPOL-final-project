@@ -1,5 +1,5 @@
 // AGRICULTURE — edit only this file for agriculture content
-// Image paths are relative to /public. Drop images in /public/images/agriculture/
+// Image paths are relative to /public. Drop images in /images/agriculture/
 
 /** @type {import('./index.js').Field} */
 
@@ -49,8 +49,8 @@ export default {
     {
       title: 'Crop Monitoring',
       description: cropMonitoringDescription,
-      humanImage: 'public/images/agriculture/crop_monitoring.png',
-      robotImage: 'public/images/agriculture/DJI_Mavic3M.jpg',
+      humanImage: 'images/agriculture/crop_monitoring.png',
+      robotImage: 'images/agriculture/DJI_Mavic3M.jpg',
       // annualIncome: 32000,
       robots: [
         {
@@ -58,15 +58,15 @@ export default {
           company: 'DJI',
           description: mavic3MDescription,
           price: '$5K',
-          image: 'public/images/agriculture/DJI_Mavic3M.jpg',
+          image: 'images/agriculture/DJI_Mavic3M.jpg',
         },
       ],
     },
     {
       title: 'Harvesting',
       description: harvestingDescription,
-      humanImage: 'public/images/agriculture/harvesting.png',
-      robotImage: 'public/images/agriculture/agrobot_E-series.jpg',
+      humanImage: 'images/agriculture/harvesting.png',
+      robotImage: 'images/agriculture/agrobot_E-series.jpg',
       // annualIncome: 30000,
       robots: [
         {
@@ -74,7 +74,7 @@ export default {
           company: 'Agrobot',
           description: agrobotESeriesDescription,
           price: 'Not disclosed, pre-commercial stage',
-          image: 'public/images/agriculture/agrobot_E-series.jpg',
+          image: 'images/agriculture/agrobot_E-series.jpg',
         },
       ],
     },
