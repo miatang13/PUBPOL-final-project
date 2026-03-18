@@ -1,9 +1,15 @@
 // BACKGROUND & MOTIVATION — edit only this file for this section's content
 
+
+const bodyText = `
+Automation is becoming increasingly common across nearly every industry. Robots are now unloading shipping containers in warehouses, scanning shelves overnight in grocery stores, and harvesting the food we eat. Advances in AI, especially in the last decade, have compounded this trend, leading to a fast-approaching fundamental shift in labor and productivity. In order to reap the rewards and dodge the pitfalls of this shift, it is essential for academics, industry leaders, and politicians to understand the dynamics at play.
+
+However, the conversation about automation tends to stay vague. Policymakers talk about "the future of work" and “investing in AI” in broad strokes. What is missing is specificity: which industries, jobs, and policies are affected by the rise of automation? Moreover, due to the rise of large language models (LLMs), the conversation is often limited to jobs in the digital realm. These gaps reveal a disconnect between those who build AI and robotics systems and those who govern them. We want to close that gap. To do this, we created an educational resource that profiles real robotic systems currently on the market alongside the actual policy shaping their deployment.
+
+Our guiding questions throughout were: what industries and jobs are positioned to see the greatest transformation from AI and robotics, and what policy decisions influence these transformations? To answer these questions, we examined four sectors: warehousing, retail, healthcare, and agriculture. These sectors were selected because they represent domains where humans and robots already work side by side, and therefore the policy stakes are tangible and immediate.
+`
+
 export default {
   title: 'Background and Motivation',
-  paragraphs: [
-    'Recent advances in AI have reshaped nearly every industry — threatening job security across software, retail, creative industries, and more, while also creating new economic opportunities. Robotics is often called the "last frontier" for AI: the point where intelligent systems move beyond screens and into the physical world. Policymakers are increasingly interested in promoting robotics and automation to improve supply chain resilience (<a href="https://www.congress.gov/bill/119th-congress/senate-bill/257" target="_blank" rel="noopener">S. 257</a>), promote innovation in the defense industrial base (<a href="https://www.congress.gov/bill/119th-congress/senate-bill/2214" target="_blank" rel="noopener">S. 2214</a>), and generally advance US technological dominance in robotics (<a href="https://www.congress.gov/bill/119th-congress/house-bill/7334" target="_blank" rel="noopener">H.R. 7334</a>).',
-    'We built this website as an educational resource focused on AI and robotics across different industries. Our guiding policy question: <em>What industries and jobs are positioned to see the greatest economic transformations from AI and robotics?</em> Below, we explore four sectors — warehousing, retail, healthcare, and agriculture — profiling the specific robots replacing human roles and the policies shaping their adoption.',
-  ],
+  body: bodyText,
 }

@@ -55,7 +55,7 @@ export function scrollReveal(targets, options = {}) {
 // --- Helpers ---
 
 let textSectionCount = 0
-function buildTextSection(id, title, paragraphs) {
+function buildTextSection(id, title, body) {
   textSectionCount++
   const index = String(textSectionCount).padStart(2, '0')
   const section = document.createElement('section')
@@ -63,7 +63,7 @@ function buildTextSection(id, title, paragraphs) {
   section.className = 'text-section'
   section.innerHTML = `
     <h2 class="text-section__heading"><span class="section-index">${index}</span> ${title}</h2>
-    ${paragraphs.map((p) => `<p class="text-section__body">${p}</p>`).join('')}
+    <div class="text-section__body">${marked.parse(body)}</div>
   `
   return section
 }
@@ -94,7 +94,7 @@ function init() {
   main.appendChild(renderDirectory(fields))
 
   // Background and Motivation section
-  main.appendChild(buildTextSection('section-background', background.title, background.paragraphs))
+  main.appendChild(buildTextSection('section-background', background.title, background.body))
 
   // Industry grids
   const gridRoot = document.createElement('div')
@@ -103,7 +103,7 @@ function init() {
   renderGrid(fields, gridRoot, (job) => openModal(job))
 
   // Policy and Geopolitics section
-  main.appendChild(buildTextSection('section-policy', policy.title, policy.paragraphs))
+  main.appendChild(buildTextSection('section-policy', policy.title, policy.body))
 
   // Side nav + back to top (after sections exist in DOM)
   renderNav(fields)

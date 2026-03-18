@@ -14,7 +14,7 @@ const moxiDescription = `## **Diligent Robotics | Moxi**
 * **Onboard Intelligence:** NVIDIA IGX Thor / Blackwell-powered AI Foundation Model.
 * **Payload Handling:** Integrated storage drawers with a 7-DOF compliant robotic arm.
 * **Navigation:** Socially intelligent SLAM; infrastructure-free (uses existing Wi-Fi).
-* **Social Features:** Expressive LED head/face with AI-driven human-robot interaction (HRI).`;
+* **Social Features:** Expressive LED head/face with AI-driven human-robot interaction (HRI).`
 
 const t3Description = `## **Aethon | T3 / T3XL**
 
@@ -29,7 +29,7 @@ const t3Description = `## **Aethon | T3 / T3XL**
 * **Payload Capacity:** 750 lbs (T3) or 1,000 lbs (T3XL).
 * **Agility:** 4WD Omnidirectional drive; capable of lateral and diagonal travel.
 * **Battery:** LiFePO4 technology with ~9-12 hours of runtime and auto-docking.
-* **System Integration:** Fully integrates with building security, door, and elevator systems.`;
+* **System Integration:** Fully integrates with building security, door, and elevator systems.`
 
 const lightStrikeDescription = `## **Xenex | LightStrike (Pulsed Xenon UV Robot)**
 
@@ -44,7 +44,7 @@ const lightStrikeDescription = `## **Xenex | LightStrike (Pulsed Xenon UV Robot)
 * **Spectrum:** Broad-spectrum UV (200nm to 320nm).
 * **Speed:** 2–5 minute disinfection cycles per room position.
 * **Safety:** Triple-sensor motion detection and emergency stop capabilities.
-* **Connectivity:** WiFi/Cellular enabled for real-time reporting and usage tracking.`;
+* **Connectivity:** WiFi/Cellular enabled for real-time reporting and usage tracking.`
 
 const alettaDescription = `## **Vitestro | Aletta**
 
@@ -59,7 +59,7 @@ const alettaDescription = `## **Vitestro | Aletta**
 * **Imaging Suite:** AI-powered ultrasound + multi-spectral infrared (IR) sensors.
 * **Accuracy:** Sub-millimeter robotic needle positioning with real-time tracking.
 * **Safety:** Fully automated disinfection and force-sensing needle retraction.
-* **Workflow:** Integrated barcode labeling and WMS/LIS (Lab Information System) syncing.`;
+* **Workflow:** Integrated barcode labeling and WMS/LIS (Lab Information System) syncing.`
 
 const artasDescription = `## **Restoration Robotics | ARTAS iX**
 
@@ -74,7 +74,7 @@ const artasDescription = `## **Restoration Robotics | ARTAS iX**
 * **Imaging Suite:** High-definition 3D stereoscopic vision with 44-micron resolution.
 * **Robotic Hardware:** 7-axis medical-grade robotic arm.
 * **Speed:** Capable of harvesting over 1,000 grafts per hour.
-* **Safety:** Real-time skin-movement tracking and force-sensing needle retraction.`;
+* **Safety:** Real-time skin-movement tracking and force-sensing needle retraction.`
 
 const yomiDescription = `## **Neocis | Yomi**
 
@@ -89,13 +89,14 @@ const yomiDescription = `## **Neocis | Yomi**
 * **Guidance Type:** Haptic (physical feedback) + multi-sensory visual/audio alerts.
 * **Onboard Intelligence:** Real-time patient tracking and 3D CT-to-patient registration.
 * **Clinical Clearance:** FDA-cleared for both partially edentulous and fully edentulous patients.
-* **Workflow:** Digital end-to-end integration from CT scan to final crown placement.`;
+* **Workflow:** Digital end-to-end integration from CT scan to final crown placement.`
 
 const healthcareDescription = `
 Healthcare is one of the most labor-intensive industries, with clinical staff spending a significant portion of their shifts on non-patient-facing tasks like transporting supplies, disinfecting rooms, and drawing blood. Chronic staffing shortages and clinician burnout have accelerated interest in robotic solutions across the care continuum. Robots in healthcare span a wide range: autonomous mobile robots that handle hospital logistics, UV disinfection systems that eliminate pathogens, precision surgical assistants that guide implant placement, and even autonomous blood-draw devices. Because these systems operate in safety-critical environments alongside vulnerable patients, they face some of the most rigorous regulatory and reliability standards of any industry.
-
+`
+/*
 Effective February 2, 2026, the FDA's [**Quality Management System Regulation (QMSR)**](https://www.fda.gov/medical-devices/quality-management-system-qmsr/quality-management-system-regulation-qmsr) — a modernization of [21 CFR Part 820](https://www.ecfr.gov/current/title-21/chapter-I/subchapter-H/part-820) — aligned US medical device standards with international benchmarks ([ISO 13485](https://www.iso.org/standard/59752.html)), updating the regulatory framework for clinical robotics. The rule covers cleanability, safety, and risk management of device chassis and enclosures (e.g., antimicrobial surfaces for robots like Moxi and T3), surgical end-effectors (e.g., sterilization protocols for systems like Yomi and ARTAS iX), and environmental controls to prevent biocontamination.
-`;
+*/
 
 /** @type {import('./index.js').Field} */
 export default {

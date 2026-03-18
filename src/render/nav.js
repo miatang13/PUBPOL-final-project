@@ -9,7 +9,7 @@ export function renderNav(fields) {
       label: f.field,
       id: `section-${f.field.toLowerCase()}`,
     })),
-    { label: 'Policy & Geopolitics', id: 'section-policy' },
+    { label: 'Policy', id: 'section-policy' },
   ]
 
   const nav = document.createElement('nav')

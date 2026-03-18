@@ -16,7 +16,7 @@ const tallyDescription = `## **Simbe Robotics | Tally 4.0**
 * **Runtime:** Up to 12 hours (with fast-charging cycles).
 * **Vision Suite:** Ultra-high-resolution 2D/3D sensors + 360° fisheye cameras.
 * **Onboard Intelligence:** NVIDIA Edge AI platform.
-* **Safety Standards:** UL 3300 Certified (First in the retail industry).`;
+* **Safety Standards:** UL 3300 Certified (First in the retail industry).`
 
 const deroxyDescription = `## **Dexory | Next-Generation Autonomous Robot**
 
@@ -31,7 +31,7 @@ const deroxyDescription = `## **Dexory | Next-Generation Autonomous Robot**
 * **Scanning Speed:** Up to 10,000 pallet locations per hour.
 * **Reach:** Extendable tower up to 14m (45ft) with dynamic safety scaling.
 * **Onboard Intelligence:** Computer vision & AI-powered "Storage Health" monitoring.
-* **Integration:** Zero-disruption deployment with WMS/ERP syncing.`;
+* **Integration:** Zero-disruption deployment with WMS/ERP syncing.`
 
 const stockbotDescription = `## **PAL Robotics | StockBot**
 
@@ -46,7 +46,7 @@ const stockbotDescription = `## **PAL Robotics | StockBot**
 * **Technology:** Integrated RFID reader (multi-regional) + Depth cameras & LiDAR.
 * **Navigation:** Autonomous SLAM (Simultaneous Localization and Mapping).
 * **Battery:** Up to 12 hours of continuous operation with autonomous docking.
-* **Safety:** Certified for operation in dynamic environments with human obstacle detection.`;
+* **Safety:** Certified for operation in dynamic environments with human obstacle detection.`
 
 const corvusOneDescription = `## **Corvus Robotics | Corvus One**
 
@@ -61,7 +61,7 @@ const corvusOneDescription = `## **Corvus Robotics | Corvus One**
 * **Scanning Capacity:** 200–400 pallet positions per 20-minute flight.
 * **Navigation:** Infrastructure-free (no WiFi or beacons required) with 14-camera vision.
 * **Vision Suite:** Long-range barcode scanning and Optical Character Recognition (OCR).
-* **Safety:** 360° obstacle detection; UL-compliant for operation during business hours.`;
+* **Safety:** 360° obstacle detection; UL-compliant for operation during business hours.`
 
 const chefRoboticsDescription = `## **Chef Robotics | AI-Enabled Food Production System**
 
@@ -76,7 +76,7 @@ const chefRoboticsDescription = `## **Chef Robotics | AI-Enabled Food Production
 * **Ingredient Versatility:** Handles thousands of SKUs including proteins, grains, and liquids.
 * **Onboard Intelligence:** Computer vision-based portioning with real-time weight adjustment.
 * **Hygiene Standards:** Food-grade construction with wash-down compatible components.
-* **Deployment:** Mobile, small-footprint design that fits into existing linear or circular lines.`;
+* **Deployment:** Mobile, small-footprint design that fits into existing linear or circular lines.`
 
 
 const bellaBotProDescription = `## **Pudu Robotics | BellaBot Pro**
@@ -92,7 +92,7 @@ const bellaBotProDescription = `## **Pudu Robotics | BellaBot Pro**
 * **Payload Capacity:** 40kg total (10kg per tray across 4 adjustable levels).
 * **Agility:** Specialized for tight spaces with a minimum path clearance of just 65cm.
 * **Interaction:** 10.1" interactive touch screen + 18.5" advertising display + AI Voice.
-* **Safety:** 360° Omni-Sense perception with intersection ground-projection alerts.`;
+* **Safety:** 360° Omni-Sense perception with intersection ground-projection alerts.`
 
 const toniDescription = `## **Makr Shakr | Toni**
 
@@ -107,13 +107,14 @@ const toniDescription = `## **Makr Shakr | Toni**
 * **Robotic Hardware:** Dual KUKA KR AGILUS industrial arms.
 * **Capacity:** 158 spirit bottles + 10 syrup dispensers + integrated beer taps.
 * **Performance:** Up to 80 drinks/hour (Toni) or 250 drinks/hour (Toni Veloce).
-* **Safety Features:** Laser fences and motion sensors for human-robot proximity.`;
+* **Safety Features:** Laser fences and motion sensors for human-robot proximity.`
 
 const retailDescription = `
 Retail and food service employ millions of workers in roles that range from stocking shelves and managing inventory to preparing meals and serving customers. These industries face persistent labor shortages, high turnover rates, and razor-thin margins — making them prime targets for automation. Robots in this space fall into two broad categories: back-of-house systems that handle inventory tracking, warehousing, and food preparation, and front-of-house robots that interact directly with customers as servers, bartenders, or greeters. Unlike industrial automation, retail robots must operate safely alongside shoppers and diners in unstructured, crowded environments, which demands advanced navigation, social awareness, and compact design.
-
+`
+/*
 On the regulatory side, the [**3-A Sanitary Standard 103-00**](https://www.3-a.org/newsletter-article/standards-for-robot-based-automation-systems) (effective 2016) established the first hygiene requirements for robot-based automation in food processing, developed jointly with the USDA and FDA. It covers cleanability and inspectability of robot bases, end-of-arm tooling, and dressings — and the USDA now relies on 3-A symbol authorization in place of its own independent equipment inspections.
-`;
+*/
 
 export default {
   field: 'Retail',
