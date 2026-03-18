@@ -34,7 +34,7 @@ The Mavic 3M is a drone designed for agricultural applications, particularly cro
 
 const agrobotESeriesDescription = `
 ## Description
-The E-Series is an autonomous harvesting robot for harvesting strawberries. It is configurable with up to 24 robotics arms on a mobile base that navigates through a greenhouse or field.
+The E-Series is an autonomous harvesting robot for harvesting strawberries. It is configurable with up to 24 robotic arms on a mobile base that navigates through a greenhouse or field.
 
 ## Quick Specs
 * **Primary Function:** Strawberry harvesting.

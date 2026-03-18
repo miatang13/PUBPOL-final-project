@@ -14,11 +14,11 @@ As autonomous mobile robots become standard in warehouses, safety is governed by
 
 
 const containerUnloadingDescription = `
-When a truck or shipping container arrives at a warehouse, workers must unload **cases** of goods, usually using a conveyor belt to transport cases into the facility. Various solutions exists, including robot arms and autonomous forklifts (for palleted cargo). Unloading is one of the more challenging tasks to automate due to irregularity in case size, weight, and placement within the truck.
+When a truck or shipping container arrives at a warehouse, workers must unload **cases** of goods, usually using a conveyor belt to transport cases into the facility. Various solutions exist, including robot arms and autonomous forklifts (for palleted cargo). Unloading is one of the more challenging tasks to automate due to irregularity in case size, weight, and placement within the truck.
 `
 
 const palletizationDescription = `
-After cases are unloaded from trucks, they are often stacked on pallets for easy transportation and storage. Palletization (and depalletization) is also done as an outbound process, in which cases are stacked on pallets to be loaded onto trucks. Palletization is generally more structured and easier to automate than unloading, but heterogenous cases add challenges.
+After cases are unloaded from trucks, they are often stacked on pallets for easy transportation and storage. Palletization (and depalletization) is also done as an outbound process, in which cases are stacked on pallets to be loaded onto trucks. Palletization is generally more structured and easier to automate than unloading, but heterogeneous cases add challenges.
 `
 
 const materialTransportDescription = `
